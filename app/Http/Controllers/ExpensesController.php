@@ -29,8 +29,8 @@ class ExpensesController extends Controller
      */
     public function index()
     {
-        if(Input::has('timestampStart') && Input::has('timestampEnd')){
-            $expenses = Expense::whereBetween('timestamp',[Input::get('timestampStart'),Input::get('timestampEnd')]);
+        if(request()->has('timestampStart') && request()->has('timestampEnd')){
+            $expenses = Expense::whereBetween('timestamp',[request()->get('timestampStart'),request()->get('timestampEnd')]);
             return \Response::json($expenses->get());
         }
         return \Response::json(Expense::all());
