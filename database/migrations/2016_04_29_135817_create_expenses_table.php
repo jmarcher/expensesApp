@@ -18,6 +18,7 @@ class CreateExpensesTable extends Migration
             $table->string('concepto');
             $table->double('valor');
             $table->unsignedBigInteger('timestamp');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
