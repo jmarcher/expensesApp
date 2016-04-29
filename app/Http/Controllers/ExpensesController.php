@@ -48,7 +48,7 @@ class ExpensesController extends Controller
 
     /**
      * @api {post} /expenses/ Guara una expense nueva
-     * @apiName GetStoreExpense
+     * @apiName PostStoreExpense
      * @apiGroup Expenses
      * @apiVersion 0.0.1
      * @apiDescription Response con la expense recién creada
@@ -101,7 +101,7 @@ class ExpensesController extends Controller
 
     /**
      * @api {put} /expenses/:id Guara una expense nueva
-     * @apiName GetStoreExpense
+     * @apiName PutStoreExpense
      * @apiGroup Expenses
      * @apiVersion 0.0.1
      * @apiDescription Response con la expense recién editada
@@ -131,7 +131,7 @@ class ExpensesController extends Controller
 
     /**
      * @api {delete} /expenses/:id Guara una expense nueva
-     * @apiName GetStoreExpense
+     * @apiName DeleteStoreExpense
      * @apiGroup Expenses
      * @apiVersion 0.0.1
      *
