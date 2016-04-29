@@ -2,7 +2,7 @@ define({ "api": [
   {
     "type": "delete",
     "url": "/expenses/:id",
-    "title": "Guara una expense nueva",
+    "title": "Borrar expense",
     "name": "DeleteStoreExpense",
     "group": "Expenses",
     "version": "0.0.1",
@@ -180,7 +180,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/expenses/",
-    "title": "Guara una expense nueva",
+    "title": "Guarda una expense nueva",
     "name": "PostStoreExpense",
     "group": "Expenses",
     "version": "0.0.1",
@@ -266,7 +266,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/expenses/:id",
-    "title": "Guara una expense nueva",
+    "title": "Actualizar expense",
     "name": "PutStoreExpense",
     "group": "Expenses",
     "version": "0.0.1",
