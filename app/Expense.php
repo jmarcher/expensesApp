@@ -9,4 +9,8 @@ class Expense extends Model
 {
     use SoftDeletes;
     protected $fillable = ['isIngreso', 'timestamp', 'concepto', 'valor'];
+
+    protected $casts = [
+        'isIngreso' => 'boolean',
+    ];
 }
